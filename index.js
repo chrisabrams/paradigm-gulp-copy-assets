@@ -1,10 +1,10 @@
 var path = require('path')
 
-module.exports = (options) => {
+module.exports = function(options) {
 
   var gulp = options.gulp
 
-  gulp.task('copy-assets', () => {
+  gulp.task('copy-assets', function() {
 
     gulp.src([
       './assets/**/*'
